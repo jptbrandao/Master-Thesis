@@ -15,13 +15,13 @@ void greedy( Data &myD, Solution &sol, double lambda);
 
 void greedyStrong( Data &myD, double lambda, Solution &left, Solution &right);
 
-void bruteForceStrong(Data &myD, Solution &sol);
+unsigned long long inversion(vector<double> &v, int low, int high);
 
-int inversion(vector<double> &v, int low, int high);
+bool checkProblemFeasibility(Data &myD, pair<double, double> limits);
 
-double getLeftLambda();
-double getRightLambda();
-void setLeftLambda(double lambda);
-void setRightLambda(double lambda);
-void resetLambdas();
+bool checkData(Data &myD);
+
+pair<double, double> findBigLambdaInterval(Data &myD);
+
+
 #endif

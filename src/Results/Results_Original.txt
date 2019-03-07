@@ -1,0 +1,320 @@
+0000.txt
+Strongly: 	 0.000089100000 
+0001.txt
+Strongly: 	 0.000068000000 
+0002.txt
+Strongly: 	 0.000055000000 
+0003.txt
+Strongly: 	 0.000066000000 
+0004.txt
+Strongly: 	 0.000085200000 
+0005.txt
+Strongly: 	 0.000038100000 
+0006.txt
+Strongly: 	 0.000080000000 
+0007.txt
+Strongly: 	 0.000106600000 
+0008.txt
+Strongly: 	 0.000074600000 
+0009.txt
+Strongly: 	 0.000065200000 
+0100.txt
+Strongly: 	 0.000162700000 
+0101.txt
+Strongly: 	 0.000141800000 
+0102.txt
+Strongly: 	 0.000142800000 
+0103.txt
+Strongly: 	 0.000111300000 
+0104.txt
+Strongly: 	 0.000174600000 
+0105.txt
+Strongly: 	 0.000108400000 
+0106.txt
+Strongly: 	 0.000113500000 
+0107.txt
+Strongly: 	 0.000212000000 
+0108.txt
+Strongly: 	 0.000204800000 
+0109.txt
+Strongly: 	 0.000147100000 
+0200.txt
+Strongly: 	 0.000351600000 
+0201.txt
+Strongly: 	 0.000217800000 
+0202.txt
+Strongly: 	 0.000438500000 
+0203.txt
+Strongly: 	 0.000573400000 
+0204.txt
+Strongly: 	 0.000390600000 
+0205.txt
+Strongly: 	 0.000492500000 
+0206.txt
+Strongly: 	 0.000423800000 
+0207.txt
+Strongly: 	 0.000431700000 
+0208.txt
+Strongly: 	 0.000562300000 
+0209.txt
+Strongly: 	 0.000511400000 
+0300.txt
+Strongly: 	 0.000626700000 
+0301.txt
+Strongly: 	 0.001135000000 
+0302.txt
+Strongly: 	 0.000387500000 
+0303.txt
+Strongly: 	 0.000824500000 
+0304.txt
+Strongly: 	 0.000917300000 
+0305.txt
+Strongly: 	 0.001303200000 
+0306.txt
+Strongly: 	 0.001225800000 
+0307.txt
+Strongly: 	 0.000931300000 
+0308.txt
+Strongly: 	 0.001168400000 
+0309.txt
+Strongly: 	 0.001486500000 
+0400.txt
+Strongly: 	 0.003165700000 
+0401.txt
+Strongly: 	 0.001665900000 
+0402.txt
+Strongly: 	 0.003304000000 
+0403.txt
+Strongly: 	 0.003381200000 
+0404.txt
+Strongly: 	 0.003560600000 
+0405.txt
+Strongly: 	 0.002759600000 
+0406.txt
+Strongly: 	 0.002565600000 
+0407.txt
+Strongly: 	 0.001822100000 
+0408.txt
+Strongly: 	 0.002833200000 
+0409.txt
+Strongly: 	 0.002944200000 
+0500.txt
+Strongly: 	 0.008931800000 
+0501.txt
+Strongly: 	 0.007772400000 
+0502.txt
+Strongly: 	 0.002288000000 
+0503.txt
+Strongly: 	 0.009516800000 
+0504.txt
+Strongly: 	 0.004806800000 
+0505.txt
+Strongly: 	 0.005399200000 
+0506.txt
+Strongly: 	 0.009050900000 
+0507.txt
+Strongly: 	 0.003049100000 
+0508.txt
+Strongly: 	 0.012976100000 
+0509.txt
+Strongly: 	 0.004876900000 
+0600.txt
+Strongly: 	 0.007019400000 
+0601.txt
+Strongly: 	 0.030632200000 
+0602.txt
+Strongly: 	 0.022270800000 
+0603.txt
+Strongly: 	 0.024940000000 
+0604.txt
+Strongly: 	 0.005392900000 
+0605.txt
+Strongly: 	 0.023075500000 
+0606.txt
+Strongly: 	 0.012649600000 
+0607.txt
+Strongly: 	 0.020194500000 
+0608.txt
+Strongly: 	 0.021087800000 
+0609.txt
+Strongly: 	 0.024863100000 
+0700.txt
+Strongly: 	 0.012441400000 
+0701.txt
+Strongly: 	 0.063440600000 
+0702.txt
+Strongly: 	 0.066356700000 
+0703.txt
+Strongly: 	 0.011277900000 
+0704.txt
+Strongly: 	 0.051997000000 
+0705.txt
+Strongly: 	 0.065665800000 
+0706.txt
+Strongly: 	 0.056572900000 
+0707.txt
+Strongly: 	 0.027108700000 
+0708.txt
+Strongly: 	 0.072712200000 
+0709.txt
+Strongly: 	 0.058386700000 
+0800.txt
+Strongly: 	 0.241159900000 
+0801.txt
+Strongly: 	 0.211274300000 
+0802.txt
+Strongly: 	 0.193143900000 
+0803.txt
+Strongly: 	 0.214468700000 
+0804.txt
+Strongly: 	 0.222771200000 
+0805.txt
+Strongly: 	 0.206847600000 
+0806.txt
+Strongly: 	 0.197308600000 
+0807.txt
+Strongly: 	 0.200479700000 
+0808.txt
+Strongly: 	 0.268231900000 
+0809.txt
+Strongly: 	 0.172672600000 
+0900.txt
+Strongly: 	 0.426113700000 
+0901.txt
+Strongly: 	 0.430504400000 
+0902.txt
+Strongly: 	 0.494547500000 
+0903.txt
+Strongly: 	 0.517762300000 
+0904.txt
+Strongly: 	 0.493575600000 
+0905.txt
+Strongly: 	 0.546112800000 
+0906.txt
+Strongly: 	 0.539013200000 
+0907.txt
+Strongly: 	 0.474820700000 
+0908.txt
+Strongly: 	 0.462642500000 
+0909.txt
+Strongly: 	 0.041077200000 
+1000.txt
+Strongly: 	 0.202435000000 
+1001.txt
+Strongly: 	 0.428263300000 
+1002.txt
+Strongly: 	 1.069505700000 
+1003.txt
+Strongly: 	 1.259997500000 
+1004.txt
+Strongly: 	 0.236667100000 
+1005.txt
+Strongly: 	 0.156501900000 
+1006.txt
+Strongly: 	 1.149714300000 
+1007.txt
+Strongly: 	 0.230294500000 
+1008.txt
+Strongly: 	 0.193461400000 
+1009.txt
+Strongly: 	 0.296240600000 
+1100.txt
+Strongly: 	 0.318228000000 
+1101.txt
+Strongly: 	 0.485746000000 
+1102.txt
+Strongly: 	 3.921297000000 
+1103.txt
+Strongly: 	 0.383370000000 
+1104.txt
+Strongly: 	 3.888251000000 
+1105.txt
+Strongly: 	 0.334863000000 
+1106.txt
+Strongly: 	 0.339211000000 
+1107.txt
+Strongly: 	 0.376621000000 
+1108.txt
+Strongly: 	 0.244747000000 
+1109.txt
+Strongly: 	 0.696593000000 
+1200.txt
+Strongly: 	 1.117674000000 
+1201.txt
+Strongly: 	 0.776486000000 
+1202.txt
+Strongly: 	 1.305280000000 
+1203.txt
+Strongly: 	 9.184690000000 
+1204.txt
+Strongly: 	 1.116919000000 
+1205.txt
+Strongly: 	 8.950272000000 
+1206.txt
+Strongly: 	 1.470074000000 
+1207.txt
+Strongly: 	 9.625039000000 
+1208.txt
+Strongly: 	 2.896956000000 
+1209.txt
+Strongly: 	 0.528627000000 
+1300.txt
+Strongly: 	 2.321873000000 
+1301.txt
+Strongly: 	 2.647085000000 
+1302.txt
+Strongly: 	 1.714886000000 
+1303.txt
+Strongly: 	 1.606608000000 
+1304.txt
+Strongly: 	 1.487651000000 
+1305.txt
+Strongly: 	 2.452806000000 
+1306.txt
+Strongly: 	 24.112603000000 
+1307.txt
+Strongly: 	 0.762945000000 
+1308.txt
+Strongly: 	 24.214708000000 
+1309.txt
+Strongly: 	 2.077346000000 
+1400.txt
+Strongly: 	 3.956660000000 
+1401.txt
+Strongly: 	 2.091091000000 
+1402.txt
+Strongly: 	 6.541074000000 
+1403.txt
+Strongly: 	 4.478037000000 
+1404.txt
+Strongly: 	 5.023219000000 
+1405.txt
+Strongly: 	 4.538671000000 
+1406.txt
+Strongly: 	 3.117451000000 
+1407.txt
+Strongly: 	 71.463664000000 
+1408.txt
+Strongly: 	 68.442042000000 
+1409.txt
+Strongly: 	 2.377184000000 
+1500.txt
+Strongly: 	 171.994387000000 
+1501.txt
+Strongly: 	 5.982203000000 
+1502.txt
+Strongly: 	 180.345679000000 
+1503.txt
+Strongly: 	 167.961561000000 
+1504.txt
+Strongly: 	 9.034344000000 
+1505.txt
+Strongly: 	 5.340788000000 
+1506.txt
+Strongly: 	 9.699026000000 
+1507.txt
+Strongly: 	 6.421898000000 
+1508.txt
+Strongly: 	 163.041175000000 
+1509.txt
+Strongly: 	 8.888115000000 

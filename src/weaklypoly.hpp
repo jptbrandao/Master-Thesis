@@ -9,9 +9,4 @@ using namespace std;
 
 void weaklyPoly(Data &myD, double lambdaMin, double lambdaMax, Solution &x);
 
-bool checkProblemFeasibility(Data &myD, pair<double, double> limits);
-
-bool checkData(Data &myD);
-
-pair<double, double> findBigLambdaInterval(Data &myD);
 #endif

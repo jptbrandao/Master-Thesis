@@ -2,40 +2,11 @@
 #include "commonFuncs.hpp"
 
 
-static double leftLambda = -numeric_limits<double>::max();
-static double rightLambda = numeric_limits<double>::max();
-double toler = 0.000001;
+double toler = 0.00000001; // added 2 zeros 19/1/19
 
-
-double getLeftLambda()
+unsigned long long mergeAndCount(vector<double> &v, int low, int mid, int high)
 {
-  return leftLambda;
-}
-
-double getRightLambda()
-{
-  return rightLambda;
-}
-
-void setLeftLambda(double lambda)
-{
-  leftLambda = lambda;
-}
-
-void setRightLambda(double lambda)
-{
-  rightLambda = lambda;
-}
-
-void resetLambdas()
-{
-  leftLambda = -numeric_limits<double>::max();
-  rightLambda = numeric_limits<double>::max();
-}
-
-int mergeAndCount(vector<double> &v, int low, int mid, int high)
-{
-  int count = 0;
+  unsigned long long count = 0;
 
   vector<double> L, R;
 
@@ -70,9 +41,9 @@ int mergeAndCount(vector<double> &v, int low, int mid, int high)
   return count;
 }
 
-int inversion(vector<double> &v, int low, int high)
+unsigned long long inversion(vector<double> &v, int low, int high)
 {
-  int count = 0;
+  unsigned long long count = 0;
   if ( low < high )
   {
     int mid = (low+high)/2;
@@ -227,90 +198,85 @@ void greedyStrong( Data &myD, double lambda, Solution &left, Solution &right)
 }
 
 
-
-vector<double> generateIntersections(Data &myD)
+// Checks if problem is feasible
+bool checkProblemFeasibility(Data &myD, pair<double, double> limits)
 {
+  double leftLambda = limits.first - 1;
+  double rightLambda = limits.second + 1;
+
+  Solution left(myD.N), right(myD.N);
+
+  greedy(myD, left, leftLambda);
+  greedy(myD, right, rightLambda);
+
+  // checks if the signs are opposite. Also, if one of them is zero, then it also works
+  if ( myD.subgradient(left) * myD.subgradient(right) <= 0 )
+    return true;
+
+  return false;
+}
+
+// Checks if the dual lines are intersecting at unique values
+bool checkData(Data &myD)
+{
+  // find all the intersections
+  // see that there are no repetitions
+  
   vector<double> intersections;
+
+  // Calculates all intersections
   for ( int i = 0 ; i < myD.N ; ++i )
   {
-    for ( int j = i+1 ; j < myD.N ; ++j )
+    for ( int j = i + 1 ; j < myD.N ; ++j )
     {
-      if ( myD.p[i] == myD.p[j] ) continue;
-      if ( myD.c[i] == myD.c[j] ) continue;
+      if ( myD.p[i] == myD.p[j] )
+      {
+        if ( myD.c[i] == myD.c[j] ) 
+          return false; // Lines coincide
+        else
+          continue; // Lines are parallel
+      }
 
-      double lambda = (myD.c[i] - myD.c[j])/(myD.p[j] - myD.p[i]);
-
-      intersections.push_back(lambda);
+      double value = (myD.c[i]-myD.c[j])/(myD.p[j]-myD.p[i]);
+      intersections.push_back(value);
     }
   }
 
-  return intersections;
-}
-
-void getPrimalCandidate(Data &myD, double lambda, Solution &sol)
-{
-  Solution left(myD.N), right(myD.N);
-  greedyStrong(myD, lambda, left, right);
-
-  convexSum(myD, left, right, sol);
-  return;
-}
-
-double medianOf5(vector<double> &v, int left, int right )
-{
-  // TODO: check iterator indices
-  sort(v.begin() + left, v.begin() + right + 1);
-
-  int mid = left + (right-left)/2;
-  return v[mid];
-}
-
-double medianOfMedians(vector<double> &v, int left, int right);
-
-double medianOfMedians(vector<double> &v, int left, int right)
-{
-  if ( right - left < 5 )
-    return medianOf5(v, left, right);
-
-  for ( int i = left ; i <= right ; i += 5 )
-  {
-    int subRight = i + 4;
-    if ( subRight > right )
-      subRight = right;
-
-    double median5 = medianOf5(v, left, subRight);
-    int idx = left + (i-left)/5;
-    std::swap(v[median5], v[idx]);
-  }
+  // Sorts the values
+  sort(intersections.begin(), intersections.end());
   
+  // Checks for repeated ones
+  for ( int i = 1 ; i < intersections.size() ; ++i )
+  {
+    if ( intersections[i] == intersections[i-1] )
+      return false;
+  }
+
+  // Returns true when none found
+  return true;
 }
 
-void bruteForceStrong( Data &myD, Solution &sol )
+
+pair<double, double> findBigLambdaInterval(Data &myD)
 {
-  // generate breakpoints
-  vector<double> intersections = generateIntersections(myD);
+  vector<pair<double, int> > pAndIndex(myD.N);
+
+  for ( int i = 0 ; i < myD.N ; ++i )
+    pAndIndex[i] = make_pair(myD.p[i], i);
+
+  sort(pAndIndex.begin(), pAndIndex.end());
+
+  vector<double> intersections;
+
+  for ( int i = 0 ; i < myD.N-1 ; ++i )
+  {
+    double value = (myD.c[i] - myD.c[i+1])/(myD.p[i+1] - myD.p[i]);
+    intersections.push_back(value);
+  }
 
   sort(intersections.begin(), intersections.end());
-  intersections.erase( unique (intersections.begin(), intersections.end()), intersections.end() );
-  
-  // binary search
-  int bot, mid, top;
-  bot = 0;
-  top = intersections.size();
-  mid = 0;
 
-  while ( bot < top )
-  {
-    mid = bot + (top-bot)/2;
+  pair<double, double> limits = make_pair(intersections[0]-1, intersections[myD.N-1]+1);
 
-    getPrimalCandidate(myD, intersections[mid], sol);
-    double subgradient = myD.subgradient(sol);
-
-    if ( subgradient > toler )
-      bot = mid + 1;
-    else if ( subgradient < -toler )
-      top = mid;
-    else
-      break;
-  }
+  return limits;
 }

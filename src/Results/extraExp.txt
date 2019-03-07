@@ -1,0 +1,52 @@
+Date: 25/1/19
+Format:
+Problem ID
+Weakly: 	 Time - Obj - PercentDif
+Strongly: 	 Time - Obj - PercentDif
+Mosek: 		 Time - Obj
+
+
+0205.txt
+Weakly: 	 0.001624800000 - 1.326211 - 0.000000 	 
+Strongly: 	 0.000459100000 - 1.326211 - 0.000000 	 
+
+
+Date: 25/1/19
+Format:
+Problem ID
+Weakly: 	 Time - Obj - PercentDif
+Strongly: 	 Time - Obj - PercentDif
+Mosek: 		 Time - Obj
+
+
+0206.txt
+Weakly: 	 0.001670700000 - 4.799647 - 0.000000 	 
+Strongly: 	 0.000526700000 - 4.799647 - 0.000000 	 
+
+
+Date: 25/1/19
+Format:
+Problem ID
+Weakly: 	 Time - Obj - PercentDif
+Strongly: 	 Time - Obj - PercentDif
+Mosek: 		 Time - Obj
+
+
+0207.txt
+Weakly: 	 0.025787700000 - 1.697987 - 0.000000 	 
+Strongly: 	 0.000194600000 - 1.697987 - 0.000000 	 
+
+
+Date: 25/1/19
+Format:
+Problem ID
+Weakly: 	 Time - Obj - PercentDif
+Strongly: 	 Time - Obj - PercentDif
+Mosek: 		 Time - Obj
+
+
+0208.txt
+Weakly: 	 0.001854500000 - 1.764352 - 0.000000 	 
+Strongly: 	 0.000456300000 - 1.764352 - 0.000000 	 
+
+
