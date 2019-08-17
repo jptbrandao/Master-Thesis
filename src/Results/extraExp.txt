@@ -50,3 +50,12 @@ Weakly: 	 0.001854500000 - 1.764352 - 0.000000
 Strongly: 	 0.000456300000 - 1.764352 - 0.000000 	 
 
 
+Date: 25/1/19
+Format:
+Problem ID
+Weakly: 	 Time - Obj - PercentDif
+Strongly: 	 Time - Obj - PercentDif
+Mosek: 		 Time - Obj
+
+
+0205.txt

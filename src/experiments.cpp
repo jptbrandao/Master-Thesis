@@ -28,7 +28,6 @@ std::pair<vector<double>, vector<double> > readVidalData(string filepath);
 void generateData(Data &myD);
 void formatIntoDataStructure(Data &myD, vector<double> cost, vector<double> upperCst);
 void saveData(Data &myD, string filepath, string filename);
-void runSmallTest();
 void manageExperiments(string readDir, string writeName);
 
 void createAndSaveAllInstances();
@@ -36,6 +35,7 @@ void createIncreasingInstances(Data &myD1, Data &myD2, std::mt19937 &gen);
 void testIncreasingData(Data &myD1, Data &myD2);
 
 void runOneExperiment(string readDir, string writeName, int probSize, int instance);
+void manageExperiments(string readDir, string writeName)
 
 void quicktest()
 {
@@ -71,7 +71,6 @@ void writeToOutput(string filepath, string text);
 void manageExperiments(string readDir, string writeName)
 {
   string readfilepath = "../../Data/" + readDir + "/RAP-NC-L_";
-  //string readfilepath = "../Data/Increasing Instances/RAP-NC-L_";
   string writefilepath = "Results/" + writeName + ".txt";
 
   string header = "Date: 24/1/19\nFormat:\nProblem ID\nWeakly: \t Time - Obj - PercentDif\nStrongly: \t Time - Obj - PercentDif\nMosek: \t\t Time - Obj\n\n";
@@ -325,7 +324,6 @@ void createIncreasingInstances(Data &myD1, Data &myD2, std::mt19937 &gen)
   double cst_prev2 = 0;
   for ( int i = 0 ; i < myD1.N ; ++i )
   {
-
     myD1.c[i] = cDis(gen);
     myD1.upperCst[i] = cst_prev1 + alpha1[i];
     myD1.nestCst[i] = true;
@@ -530,7 +528,6 @@ double runStronglyAlgorithm(Data &myD, double &totalDuration, int numRepetitions
 
   for ( int i = 0 ; i < numRepetitions; ++i )
     sols.emplace_back(myD.N);
-
 
   clock_t beginTime, endTime;       // Snapshot of current times
   beginTime = clock();
